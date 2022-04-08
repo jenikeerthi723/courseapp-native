@@ -1,0 +1,96 @@
+
+
+[
+    {
+        "userId": 1,
+        "id": "1",
+        "name": "Vursha",
+        "email": "vurshakumar@clayfin.com",
+        "courseTaken" : "HTML",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAf-UHGtI6Ky5NEJMwaOKb9EKp07uCdmmrNw&usqp=CAU",
+        "description": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        "userId": 2,
+        "id": "2",
+        "name": "Teena",
+        "email": "teena@technical.com",
+        "courseTaken" : "CSS",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVx-vLVXmcOnAvF2DMuohiZcoBcVhFI4tnOQ&usqp=CAU",
+        "description": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    },
+    {
+        "userId": 3,
+        "id": "3",
+        "name": "leena",
+        "email": "leena@young.com",
+        "courseTaken" : "TESTING",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5FOS6hByZQ5-3NpfePEE2PrNfZg7PhH0cKw&usqp=CAU",
+        "description": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    },
+    {
+        "userId": 4,
+        "id": "4",
+        "name": "sheela",
+        "email": "sheela@technical.com",
+        "courseTaken" : "HACKING",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWiAjMs-dUkiopNTA3TWcJST2XxCz0orOUUQ&usqp=CAU",
+        "description": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+    },
+    {
+        "userId": 5,
+        "id": "5",
+        "name": "rose",
+        "email": "rose@technical.com",
+        "courseTaken" : "JAVASCRIPT",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2I1aG_3kDLd_Q2zhuLoJTF4XP6sSkojaEgA&usqp=CAU",
+        "description": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+    },
+    {
+        "userId": 6,
+        "id": "6",
+        "name": "jeni",
+        "email": "jeni@technical.com",
+        "courseTaken" : "ANGULAR",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8CrBsvcUhnZyiTK-oU7Zm5TgTbUBg6YOjSg&usqp=CAU",
+        "description": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+    },
+    {
+        "userId": 7,
+        "id": "7",
+        "name": "keerthi",
+        "email": "keerthi@technical.com",
+        "mobile": "1234567899",
+        "courseTaken":"VUE",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVx-vLVXmcOnAvF2DMuohiZcoBcVhFI4tnOQ&usqp=CAU",
+        "description": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+
+    },
+    {
+        "userId": 8,
+        "id": "8",
+        "name": "helan",
+        "email": "helan@technical.com",
+        "mobile": "1234567899",
+        "courseTaken" : "CSS",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5lsDBgN4bFAqAA4rB8I-uvCqPbKXO7yuSSQ&usqp=CAU",
+        "description": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+    },
+    {
+        "userId": 9,
+        "id": "9",
+        "name": "haasini",
+        "email": "haasini@technical.com",
+        "courseTaken" : "CSS",
+        "mobile": "1234567899",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAf-UHGtI6Ky5NEJMwaOKb9EKp07uCdmmrNw&usqp=CAU",
+        "description": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
+    }]
+
+    
