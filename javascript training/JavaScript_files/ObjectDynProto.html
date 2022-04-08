@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>ObjectDynProto</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>  
+<p>ObjectDynProto</p>  
+<script>
+var PersonDynProto = function (fname,lname,email) {
+this.fname = fname;
+this.lname = lname;
+this.email = email;
+
+if (typeof(this.displayName !== 'function')) {
+	PersonDynProto.prototype.displayName = function (){
+		console.log(`${this.fname} ${this.lname}`);
+		};
+	};
+
+};
+
+var person1 = new PersonDynProto ('Karthik','Raman','karthik@clayfin.com' );
+person1.fname = "Karthik";
+person1.lname = "Raman";
+
+person1.displayName();    
+
+</script>
+</body>
+    ,
+</html>
+

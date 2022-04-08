@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Objects</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Objects</p>  
+<script>
+ const employee = {
+firstName: "Karthik",
+lastname: "Raman",
+address: {
+	street:"58/1,Bazullah Road",
+	area : "T Nagar",
+	city : "Chennai",
+	state : "TN"
+	}
+}
+console.log(employee);
+
+console.log(employee.firstName);
+console.log(employee.address.area);
+
+const { firstName,lastname,address:{city} } = employee;
+
+console.log(firstName);
+console.log(city);
+
+
+employee.email = "karthik@clayfin.com";
+console.log(employee);
+
+
+   
+
+</script>
+</body>
+
+</html>
+

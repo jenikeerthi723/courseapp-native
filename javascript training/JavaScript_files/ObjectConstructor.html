@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>ObjectConstructor</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>ObjectConstructor</p>  
+<script>
+var PersonConstructor = function (fname,lname,email) {
+this.fname = fname;
+this.lname = lname;
+this.email = email;
+
+this.displayName = function( ) {
+	console.log(`${this.fname} ${this.lname}`);
+};
+
+};
+var person1 = new PersonConstructor ('Karthik','Raman','karthik@clayfin.com');
+person1.displayName();
+    
+
+</script>
+</body>
+  
+</html>
+

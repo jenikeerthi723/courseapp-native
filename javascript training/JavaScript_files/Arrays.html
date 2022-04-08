@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Arrays</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Arrays2</p>  
+<script>
+const numbers = new Array(1,2,3,4,5);
+
+console.log(numbers);
+
+const CWC = ["India","England","South Africa","Pakistan"];
+
+console.log(CWC);
+
+CWC[3] ="New Zealand";
+
+console.log(CWC);
+
+CWC.push("West Indies"); 
+CWC.unshift("Australia");
+
+console.log(CWC);
+
+CWC.pop();
+
+console.log(CWC);
+
+console.log(Array.isArray(CWC));
+
+console.log(CWC.indexOf("India"));
+
+
+const todos = [
+
+	{
+		id:1,
+		text: "Conduct Training on Javascript",
+		isCompleted: true
+	},
+	{
+		id:2,
+		text: "Conduct Training on jQuery",
+		isCompleted: false
+	},
+	{
+		id:3,
+		text: "Conduct Training on Backbone",
+		isCompleted: false
+	},
+];
+
+console.log(todos);
+
+console.log(todos[1].text);
+
+////Similar to JSON   Keys in "
+//
+const todo = JSON.stringify(todos);
+console.log(todo);
+    
+const arr = new Array (1, "Hi");
+console.log(arr);
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

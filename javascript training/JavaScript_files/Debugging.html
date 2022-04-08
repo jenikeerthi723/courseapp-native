@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Debugging</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Debugging</p>  
+<script>
+
+var a1= [ 1,2,3,4,5];
+a1.push(6);
+console.log(a1);
+console.dir(a1);
+
+var myfunc = function(){
+    return 'Hello'
+}
+
+console.log(myfunc);
+console.dir(myfunc);
+
+var a1= [  
+    {"fname":"Karthik", "lname":"Karthik", "email":"karthik@clayfin.com"},  
+    {"fname":"Kannan", "lname":"Ramaswamy", "email":"kannan@clayfin.com"}  
+] ;
+console.log(a1);
+console.table(a1);
+
+console.time('Timing');
+setTimeout(()=> {
+	console.log("ClayFin");
+	console.timeEnd('Timing');
+	},5000);
+	
+var a1 = 1;
+var a2 = 2;
+debugger;
+    
+    var person = function  () { };
+console.dir(person);
+
+	
+</script>
+</body>
+    ,
+</html>

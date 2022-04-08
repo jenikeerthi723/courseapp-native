@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+} 
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #333;
+}
+
+.Header, .Footer {
+  width: 100%;
+  background-color: #66d8f5;
+  padding: 1rem;
+}
+
+.Nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+}
+
+.searchForm {
+  width: 80%;
+}
+
+.searchForm input[type="text"] {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.Nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.Nav li {
+  padding: 1rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Home, .NewPost, .PostPage, .About, .Missing {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.post {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+} 
+
+.Home .post a {
+  text-decoration: none;
+}
+
+.Home .post a, 
+.Home .post a:visited {
+  color: #000;
+}
+
+.postDate {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.postBody {
+  margin: 1rem 0;
+}
+
+.newPostForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.newPostForm label {
+  margin-top: 1rem;
+}
+
+.newPostForm input[type='text'], 
+.newPostForm textarea {
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.newPostForm textarea {
+  height: 100px;
+}
+
+.newPostForm button {
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.PostPage button {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: red;
+  cursor: pointer;
+}
+
+html {
+  font-size: 22px;
+}
+
+.Nav {
+  flex-direction: row;
+}
+
+.Nav ul {
+  text-align: right;
+}
+
+.searchForm {
+  padding: .5rem 0;
+}
+
+.Header button {
+  font-size: 0.5rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  /* font-size: 1rem; */
+  background-color: gray;
+  cursor: pointer;
+}
+
+.Header-title-div {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  justify-content: space-between;
+}
+
+.Header-icon-div {
+  margin: auto 0;
+}
+
+.Header-icon {
+  margin-top: 8px;
+  font-size: 70px;
+}
+
+.PostPage img {
+  border-radius: 0.25rem; 
+}

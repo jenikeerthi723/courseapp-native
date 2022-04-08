@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>FunctionsAsArgandReturn</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>FunctionsAsArgandReturn</p>  
+<script>
+let add = function(a,b) {
+	return a+b;
+};
+
+let subtract = function(a,b) {
+	return a-b;
+};
+
+//    let calc = function (op, n1,n2)
+//    {
+//        console.log(op);
+//        switch (op) {
+//                
+//            case 'add' : console.log(add(n1,n2));
+//                         break;
+//            case 'subtract': console.log(subtract (n1,n2));
+//                        break;
+//            default: break
+//        }
+//    }
+//    
+//    calc('add', 4,5);
+//    calc('subtract', 10,7);
+    
+let calc = function(callfunc, n1 , n2)
+{
+	return callfunc(n1,n2);
+};
+//    
+console.log(calc);
+console.dir(calc);
+//
+console.log(calc(add,4,2));
+console.log(calc(subtract,4,2));
+//
+//
+function DispMB() {
+  return function calculateMB(x) { return x * 1024; };
+}
+//
+var mb = DispMB();
+console.log(mb(150));
+//
+console.log(mb);
+
+</script>
+</body>
+
+</html>

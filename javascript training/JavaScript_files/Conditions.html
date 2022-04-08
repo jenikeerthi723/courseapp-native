@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Conditions</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Conditions</p>  
+<script>
+  const x = 10;
+
+if(x == "10") {    // True for x = 10 or x = "10"
+	console.log(true)
+}
+
+if (x === "10") { //Matches datatypes too
+	console.log(true)
+}
+
+
+//Ternary operator
+const y = 10;
+const color = y>10 ? "Green" : "Red";
+console.log(color);
+
+switch(color) {
+case 'red' :
+	console.log('Red');
+	break;
+case 'blue' :
+	console.log('Blue');
+	break;	
+default:
+	console.log('Others');
+	break;
+}
+  
+
+</script>
+</body>
+</html>
+

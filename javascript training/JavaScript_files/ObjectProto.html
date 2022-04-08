@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>ObjectProto</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>ObjectProto</p>  
+<script>
+    
+var PersonProto = function () {
+
+};
+    
+    //console.dir(PersonProto)
+
+PersonProto.prototype.fname = "K";
+PersonProto.prototype.lname = "R";
+PersonProto.prototype.email = "@";
+
+PersonProto.prototype.displayName = function( ) {
+	console.log(`${this.fname} ${this.lname}`);
+};
+    
+console.dir(PersonProto)
+
+
+
+var person1 = new PersonProto ();
+person1.fname = "Karthik";
+person1.lname = "Raman";
+
+person1.displayName();
+
+console.log(person1.hasOwnProperty("fname"));
+    console.dir(person1);
+  
+var person2 = new PersonProto ();
+person2.fname='ABC'
+console.dir(person2);
+    
+var person= function() {}
+console.dir(person);
+    
+</script>
+</body>
+    
+</html>

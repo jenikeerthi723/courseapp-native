@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>DefaultParameters</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>DefaultParameters</p>  
+<script>
+
+var add = function (a , b ) {
+	if (a === undefined) {
+		a = 0;
+	}
+	if (b === undefined) {
+		b = 0;
+	}
+	return a + b;
+};
+
+console.log(add(1));
+
+var add = function (a , b ) {
+	a = a || 0;
+	b = b || 0;
+	return a + b;
+};
+
+console.log(add(2));
+
+var add = function (a = 0 , b = 0 ) {
+	
+	return a + b;
+};
+
+console.log(add(3));
+
+
+</script>
+</body>
+    ,
+</html>

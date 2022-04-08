@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>MethodChaining</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>MethodChaining</p>  
+<script>
+
+var obj = function() {
+	this.i = 0;
+	
+	this.add = function(a) {
+		this.i += a;
+		return this;
+	};
+	this.subtract = function(a) {
+		this.i -= a;
+		return this;
+	};
+	this.print =function(){
+		console.log(this.i);
+	};
+};
+
+var tmp = new obj();
+console.log(tmp);
+console.log(tmp.add(4));
+console.log(tmp.subtract(2));
+console.log(tmp.print());
+//
+console.log(tmp.add(4).subtract(2).print());
+    
+//console.log(tmp.add(4).print().subtract(2));
+
+
+	
+	
+    
+
+</script>
+</body>
+    ,
+</html>

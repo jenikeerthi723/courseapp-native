@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Encapsulation</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Encapsulation</p>  
+<script>
+
+var obj = function() {
+	var i = 4;
+	
+	var add = function(a) {
+		i += a;
+		return this;
+	};
+	var subtract = function(a) {
+		i -= a;
+		return this;
+	};
+	var print =function(){
+		console.log(i);
+	};
+	
+	return { add1:add, subtract1:subtract,  print1:print};
+};
+
+var tmp = new obj();
+console.log(tmp);
+console.log(tmp.i);
+
+console.log(tmp.add1(4));
+console.log(tmp.subtract1(2));
+console.log(tmp.print1());
+
+console.log(tmp.add1(4).subtract1(2).print1());
+
+
+	
+	
+    
+
+</script>
+</body>
+    ,
+</html>

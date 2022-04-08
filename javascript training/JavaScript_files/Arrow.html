@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Arrow</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Arrow</p>  
+<script>
+
+//var t1 = function ( ) {
+//	this.counter = 5;
+//    
+//    this.add = function(a) {
+//		this.counter += a;
+//		console.log (this.counter);
+//	};
+//	
+//	setTimeout( function () {
+//		this.counter ++;
+//		console.log(this.counter)
+//		},5000)
+//};
+//
+//var t = new t1();
+//console.log(t.counter);
+//t.add(5);
+//
+//var t1 = function ( ) {
+//	var that = this;
+//	this.counter = 0;
+//	
+//	setTimeout( function () {
+//		that.counter ++;
+//		console.log(that.counter)
+//		},5000)
+//};
+//
+//var t = new t1();
+//
+var t1 = function ( ) {
+	
+	this.counter = 0;
+	
+	setTimeout( () => {
+		this.counter ++;
+		console.log(this.counter)
+		},5000)
+};
+
+var t = new t1();
+
+
+
+</script>
+</body>
+    ,
+</html>

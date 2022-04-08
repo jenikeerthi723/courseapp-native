@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>SubClass</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body> 
+<p>SubClass</p>  
+<script>
+    
+//Base Class
+var Contact = function(fname,lname) {
+	this.fname = fname;
+	this.lname = lname;
+
+};
+Contact.prototype.DisplayName = function () {
+	console.log(`${this.fname} ${this.lname}`);
+};
+
+//SubClass
+var EmailContact = function(fname,lname,email) {
+Contact.call(this,fname,lname);
+//this.fname = fname;
+//this.lname = lname;
+this.email = email;
+};
+
+EmailContact.prototype = Object.create(Contact.prototype);
+EmailContact.prototype.constructor = EmailContact;
+
+
+/*EmailContact.prototype.DisplayName = function () {
+	console.log(`${this.fname} ${this.lname} ${this.email}`);
+};*/
+
+var contact1 = new EmailContact("Karthik","Raman","karthik@clayfin.com");
+console.log(contact1.DisplayName());
+
+</script>
+</body>
+</html>

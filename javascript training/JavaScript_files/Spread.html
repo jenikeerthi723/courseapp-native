@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Spread</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Spread</p>  
+<script>
+
+
+// var myfunc = function () {
+// 	var args = Array.prototype.slice.call(arguments,0);
+// 	console.log(args);
+// };
+
+// myfunc(1,2,3);
+// myfunc(1,2,3,4,5);
+    
+// var myfunc = function (...n) {
+// 	console.log(n);
+// };
+// myfunc(1,2,3);
+// myfunc(1,2,3,4,5);
+// myfunc(1,2,3,4,5,1,2,3,4,5);
+
+
+// var myfunc = function (p1,p2,p3,...n) {
+// 	console.log(`${p1},${p2},${p3},${n}`);
+// };
+// myfunc(1,2,3);
+// myfunc(1,2,3,4,5);
+
+// var a1= [1,2,3,4,5];
+// var a2=Object.assign([],a1);
+// console.log(a2);
+
+// var a2=[...a1];
+// console.log(a2);
+
+// var a1 = [1,2,3,4,5];
+// var a2 = [6,7,8,9,10];
+// a1.push(...a2);
+// console.log(a1);
+
+// var a1 = [1,2,3,4,5];
+// var a2 = [6,7,8,9,10];
+// console.log([...a1,...a2]);
+
+var a1 = [10,20,1,25,40,35,90,99,87];
+console.log(Math.max(...a1));
+
+</script>
+</body>
+    
+</html>

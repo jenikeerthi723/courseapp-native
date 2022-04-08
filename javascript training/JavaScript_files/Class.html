@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Class</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Class</p>  
+<script>
+//Constructor function
+function Person(fName , lName, email) {
+	this.fName = fName;
+	this.lName = lName;
+	this.email = email;
+};
+
+Person.prototype.getFullName = function () {
+		return `${this.fName} ${this.lName}`;
+};
+
+//Instantiate Object
+var p = new Person("Karthik","Raman","karthik@clayfin.com");
+console.log(p);
+
+//Syntactic Sugar  -- Class
+
+class Person1 {
+	
+	constructor(fName , lName, email) {
+	this.fName = fName;
+	this.lName = lName;
+	this.email = email;
+	};
+	
+	getFullName = function () {
+		return `${this.fName} ${this.lName}`;
+		}
+		
+};
+
+//Instantiate Object
+const p1 = new Person1("Karthik","Raman","karthik@clayfin.com");
+console.log(p1);    
+
+
+class Person2 extends Person1 { 
+
+}
+
+const p2 = new Person2("K","R","@");
+console.log(p2);
+
+</script>
+</body>
+</html>

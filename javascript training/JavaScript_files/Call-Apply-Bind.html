@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Call-Apply-Bind</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Call-Apply-Bind</p>  
+<script>
+
+function DisplayName(greeting,lang) {
+  console.log(lang);
+  console.log(`${greeting} ${this.fname} ${this.lname}`);
+}  
+
+// DisplayName = (greeting,lang) => {
+//   console.log(lang);
+//   console.log(`${greeting} ${this.fname} ${this.lname}`);
+// }
+
+const p1 = {
+  fname: 'Karthik',
+  lname: 'Raman',
+};
+const p2 = {
+  fname: 'Kannan',
+  lname: 'Ramaswamy',
+};
+
+DisplayName.call(p1, 'Hello','EN');
+DisplayName.call(p2, 'Hi','AR');
+
+DisplayName.apply(p1, ['Hello','EN']);
+DisplayName.apply(p2, ['Hi','AR']);
+
+const bound = DisplayName.bind(p1);
+console.dir(bound);
+bound('Hello','EN');
+
+
+
+</script>
+</body>
+</html>

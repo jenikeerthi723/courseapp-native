@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Functions</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>Functions</p>  
+<script>
+function addNums(n1,n2) {
+
+	console.log(n1+n2);
+}
+
+addNums(5,4);
+
+addNums()  // NaN
+
+function addNums1(n1=1,n2=2) {
+
+	console.log(n1+n2)
+}
+
+addNums1(); 
+
+function addNums2(n1,n2) {
+
+	return (n1+n2)
+}
+
+console.log(addNums2(5,4));
+
+//Arrow functions
+
+var addNums3 = (n1=1,n2=2) => {
+		return (n1+n2)
+}
+
+console.log(addNums3(5,4));
+
+</script>
+</body>
+</html>
+
+
+
+
+

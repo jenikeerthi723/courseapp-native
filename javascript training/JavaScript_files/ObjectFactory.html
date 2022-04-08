@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>ObjectFactory</title>
+<link rel="Fav icon" href="images/favicon.ico">
+</head>
+<body>
+<p>ObjectFactory</p>  
+<script>
+var PersonFactory = function  Person (fname,lname,email) {
+var  temp = {};
+temp.fname = fname;
+temp.lname = lname;
+temp.email = email;
+
+temp.displayName = function( ) {
+	console.log(`${this.fname} ${this.lname}`);
+};
+return temp;
+};
+var person1 = new PersonFactory ('Karthik','Raman','karthik@clayfin.com');
+person1.displayName();   
+
+</script>
+</body>
+    
+</html>
