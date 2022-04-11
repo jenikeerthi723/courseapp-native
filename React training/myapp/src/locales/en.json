@@ -1,7 +1,0 @@
-{
-  "home" : {
-	  "Hello": "Hello !!! Welcome to react using react-i18next",
-	  "description": "How are you",
-	  "GoodMorning": "Good Morning"
-   }
-}

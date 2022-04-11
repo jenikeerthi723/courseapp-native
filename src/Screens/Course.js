@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import { FlatList, StyleSheet, Text, View,Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Courses from '../api/Course';
@@ -55,9 +56,9 @@ const styles = StyleSheet.create({
 
   cardImage:{
     width:"100%",
-    height:undefined,
+    height:300,
     aspectRatio:1,
-    borderRadius:30
+    borderRadius:50
   },
   mainContainer:{
     paddingHorizontal:20,
@@ -76,15 +77,15 @@ const styles = StyleSheet.create({
   },
   mainHeader:{
     fontSize:22,
-    color:"#344055",
+    color:"blue",
     textTransform:"uppercase",
     paddingBottom: 15,
     textAlign:"center",
-    fontFamily:"Nunito_600SemiBold"
+    fontFamily:"GideonRoman-Regular"
   },
   description:{
     textAlign: "left",
-    fontFamily: "JosefinSans_400Regular",
+    fontFamily: "SupermercadoOne-Regular",
     paddingBottom: 15,
     lineHeight: 20,
     fontSize:16,
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
  buttonText:{
    fontSize: 20,
    color:"#eee",
-  fontFamily:"JosefinSans_500Medium",
+  fontFamily:"SupermercadoOne-Regular",
   textTransform:"capitalize"
 
  },

@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View,ScrollView, TouchableOpacity,Linking} from "react-native";
-import { WebView } from 'react-native-webview';
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable quotes */
+import { StyleSheet, Text, View,ScrollView, TouchableOpacity,Image} from "react-native";
 import React from "react";
 import Courses from "../api/Course";
 
@@ -14,40 +15,42 @@ const CourseDetails = ({ navigation, route }) => {
   return (
     <View style={styles.mainContainer}>
       <View style={styles.courseContainer}>
-       
+
         <Text style={styles.mainHeader}>{selectedCourse.title}</Text>
         <View>
           <Text style={[styles.text,{fontSize:25,fontWeight:"bold",color:"black"}]}>
-            Available Courses 
+            Available Courses
           </Text>
         </View>
         <ScrollView>
         <View style={{flexDirection:"row",height:400,width:400,flexWrap:"wrap"}}>
-       
-  
+
+
         <TouchableOpacity
-        onPress={()=> navigation.navigate("Screen1",selectedCourse.course1.link)}>   
+        onPress={()=> navigation.navigate("Screen1",selectedCourse.course1.link)}>
         <Text style={styles.description}>{selectedCourse.course1.name}</Text>
+      
         </TouchableOpacity>
-        
-       
+
+
         <TouchableOpacity
-        onPress={()=> navigation.navigate("Screen1",selectedCourse.course2.link)}>   
+        onPress={()=> navigation.navigate("Screen1",selectedCourse.course2.link)}>
         <Text style={styles.description}>{selectedCourse.course2.name}</Text>
+       
         </TouchableOpacity>
-         
+
         <TouchableOpacity
-        onPress={()=> navigation.navigate("Screen1",selectedCourse.course3.link)}>   
+        onPress={()=> navigation.navigate("Screen1",selectedCourse.course3.link)}>
         <Text style={styles.description}>{selectedCourse.course3.name}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
-        onPress={()=> navigation.navigate("Screen1",selectedCourse.course4.link)}>   
+        onPress={()=> navigation.navigate("Screen1",selectedCourse.course4.link)}>
         <Text style={styles.description}>{selectedCourse.course4.name}</Text>
         </TouchableOpacity>
 
 
-    
+
        </View>
        </ScrollView>
         <View style={styles.buttonContainer}>
@@ -70,12 +73,12 @@ const styles = StyleSheet.create({
     height: undefined,
     aspectRatio: 1,
     borderRadius:600,
-    flexDirection:"column"
+    flexDirection:"column",
   },
   mainContainer: {
     paddingHorizontal: 20,
   },
- 
+
   courseContainer: {
     padding: 30,
     backgroundColor: "rgba(255,255,255,0.90)",
@@ -89,6 +92,10 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     //justifyContent:"space-evenly"
   },
+  // tinyLogo:{
+  //   width:100,
+  //   height:100
+  // },
   mainHeader: {
     fontSize: 22,
     color: "blue",
@@ -117,7 +124,7 @@ const styles = StyleSheet.create({
     borderRadius:20,
     borderColor:"white",
     borderWidth:1,
-    flexDirection:"row"
+    flexDirection:"row",
   },
   description1:{
     textAlign: "center",
@@ -135,7 +142,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-  
+
   },
   price: {
     backgroundColor: "#344055",
@@ -168,10 +175,10 @@ const styles = StyleSheet.create({
   },
   text:{
     fontSize: 20,
-    fontFamily:"JosefinSans_500Medium",
+    fontFamily:"GideonRoman-Regular",
     color:"black",
     opacity: 0.4,
-  }
+  },
 });
 
 export default CourseDetails;

@@ -44,7 +44,7 @@ const Home = props => {
                 fontSize: 30,
                 color: 'blue',
                 marginTop: 0,
-                fontFamily: 'Nunito_600SemiBold',
+                fontFamily: 'GideonRoman-Regular',
               },
             ]}>
             {props.channelName}
@@ -123,12 +123,13 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   mainHeader: {
-    fontSize: 20,
+    fontSize: 30,
     marginLeft: 5,
     color: 'black',
     textTransform: 'uppercase',
     fontFamily: 'Nunito_600SemiBold',
     textAlign: 'center',
+    fontFamily:"SupermercadoOne-Regular"
   },
   paraStyle: {
     textAlign: 'left',
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     paddingBottom: 50,
     lineHeight: 26,
-    fontFamily: 'JosefinSans_400Regular',
+    fontFamily:'SupermercadoOne-Regular',
   },
   lineStyle: {
     marginBottom: 12,
